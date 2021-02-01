@@ -5,7 +5,7 @@ class ScratchKokaro {
     getInfo() {
         return {
             "id": "Kokaro",
-            "name": "Fetch",
+            "name": "ScratchKokaro",
             "blocks": [
                         {
                             "opcode": "ambilRujak",
