@@ -8,7 +8,7 @@ class TelegramBot {
 			"name": "TelegramBot",
 			"blocks": [{
 				"opcode": "sendMsg",
-				"blockType": "COMMAND",
+				"blockType": "command",
 				"text": "Send [text] To [ChatID]",
 				"func": "sendMsg",
 				"arguments": {
