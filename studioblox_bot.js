@@ -28,7 +28,7 @@ sendMsg(ChatID, text) {
 			'text' : text,
 		};
 
-		fetch('https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage',{
+	return	fetch('https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage',{
 					method : 'POST',
 					headers : {
 						'Content-type' : 'application/json'
