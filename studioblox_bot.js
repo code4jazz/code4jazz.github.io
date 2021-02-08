@@ -9,13 +9,13 @@ class TelegramBot {
 			"blocks": [{
 				"opcode": "sendMsg",
 				"blockType": Scratch.BlockType.COMMAND,
-				"text": "Send [text] To [ChatID]",
+				"text": "Send [teks] To [ChatID]",
 				"arguments": {
 					"ChatID": {
 						"type": "STRING",
 						"defaultValue": "TelegramChatID"
 					},
-					"text": {
+					"teks": {
 						"type": "STRING",
 						"defaultValue": "Hi"
 					}
@@ -24,10 +24,10 @@ class TelegramBot {
 		};
 	}
 
-	sendMsg({ChatID, text}) {
+	sendMsg({ChatID, teks}) {
 	var data = {
 			"chat_id" : ChatID,
-			"text" : text,
+			"text" : teks,
 		}
 
 	return	fetch("https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage",{
