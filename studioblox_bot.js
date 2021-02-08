@@ -1,11 +1,11 @@
-class StudioBloxTelegram {
+class TelegramBot {
 	constructor() {
     }
 
 	getInfo() {
 		return {
 			"id": "StudioBloxTelegram",
-			"name": "Telegram Bot",
+			"name": "TelegramBot",
 			"blocks": [{
 				"opcode": "sendMsg",
 				"blockType": Scratch.BlockType.COMMAND,
@@ -46,4 +46,4 @@ sendMsg(ChatID, text) {
 	
 }
 }
-Scratch.extensions.register(new StudioBloxTelegram())
+Scratch.extensions.register(new TelegramBot())
