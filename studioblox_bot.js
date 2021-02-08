@@ -8,7 +8,7 @@ class TelegramBot {
 			"name": "TelegramBot",
 			"blocks": [{
 				"opcode": "sendMsg",
-				"blockType": "command",
+				"blockType": Scratch.BlockType.COMMAND,
 				"text": "Send [text] To [ChatID]",
 				"arguments": {
 					"ChatID": {
