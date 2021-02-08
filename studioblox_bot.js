@@ -1,5 +1,8 @@
-class StudioBloxTelegram implements ScratchExtension {
-	getInfo(): ExtensionMetadata {
+class StudioBloxTelegram {
+	constructor() {
+    }
+
+	getInfo() {
 		return {
 			"id": "StudioBloxTelegram",
 			"name": "Telegram Bot",
@@ -20,7 +23,7 @@ class StudioBloxTelegram implements ScratchExtension {
 				}
 			}]
 		}
-	}
+	
 
 sendMsg(ChatID, text) {
 	let data = {
@@ -41,5 +44,6 @@ sendMsg(ChatID, text) {
 			.catch(err => console.log(err))
 }
 	
+}
 }
 Scratch.extensions.register(new StudioBloxTelegram())
