@@ -23,10 +23,22 @@ class StudioBloxTelegram implements ScratchExtension {
 	}
 
 sendMsg(ChatID, text) {
-	const Http = new XMLHttpRequest();
-	const url='https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage?chat_id='+ ChatID + '&text=' + text;
-	Http.open("POST", url);
-	Http.send();
+	let data = {
+			'chat_id' : ChatID,
+			'text' : text,
+		};
+
+		fetch('https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage',{
+					method : 'POST',
+					headers : {
+						'Content-type' : 'application/json'
+					},
+					body : JSON.stringify(data)			
+				}
+			)
+			.then(res => res.text())
+			.then(teks => console.log(teks))
+			.catch(err => console.log(err));
 };
 	
 }
