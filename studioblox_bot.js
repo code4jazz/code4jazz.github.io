@@ -7,7 +7,7 @@ class StudioBloxTelegram implements ScratchExtension {
 				opcode: "sendMsg",
 				blockType: Scratch.BlockType.COMMAND,
 				text: "SendTo [ChatID] [text]",
-				func: 'sendMsg',
+				func: "sendMsg",
 				arguments: {
 					ChatID: {
 						type: Scratch.ArgumentType.STRING,
@@ -21,7 +21,8 @@ class StudioBloxTelegram implements ScratchExtension {
 			}]
 		}
 	}
-ExampleExtension.prototype.sendMsg = function (ChatID, text) {
+
+sendMsg(ChatID, text) {
 	const Http = new XMLHttpRequest();
 	const url='https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage?chat_id='+ ChatID + '&text=' + text;
 	Http.open("POST", url);
