@@ -24,7 +24,7 @@ class StudioBloxTelegram implements ScratchExtension {
 
 sendMsg(ChatID, text) {
 	const Http = new XMLHttpRequest();
-	const url='https://api.telegram.org/bot1123142071:AAGu6LFpa9NpM_yKnLsrv2XMh5mODUjLhjY/sendMessage?chat_id='+ ChatID + '&text=' + text;
+	const url='https://api.telegram.org/botTOKEN/sendMessage?chat_id='+ ChatID + '&text=' + text;
 	Http.open("POST", url);
 	Http.send();
 };
