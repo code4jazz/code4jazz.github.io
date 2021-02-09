@@ -52,9 +52,9 @@ class TelegramBot {
 					"method" : "GET"		
 				}
 			)
-			.then(response => response.text());
-		var obj = JSON.parse(data);
-		return obj["msg"];
+			.then(response => response.text())
+		var obj = JSON.parse(data)
+		return obj["msg"]
 	}
 
 }
