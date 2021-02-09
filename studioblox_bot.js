@@ -27,7 +27,13 @@ class TelegramBot {
 			{
 				"opcode": "readMsg",
 				"blockType": "reporter",
-				"text": "MsgReceived"
+				"text": "MsgReceived [teks]",
+				"arguments": {
+					"teks": {
+						"type": "string",
+						"defaultValue": "MsgReceived"
+					}
+				}
 			}]
 		};
 	}
@@ -47,13 +53,11 @@ class TelegramBot {
 	}
 
 	readMsg() {
-		return fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
+	return	fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
 					"method" : "GET"		
 				}
 			)
 			.then(response => response.text())
-		//var obj = JSON.parse(data)
-		//return data
 	}
 
 }
