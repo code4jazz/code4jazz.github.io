@@ -62,7 +62,7 @@ class TelegramBot {
 				}
 			)
 			.then(response => response.text())
-	return data["msg"]
+	return data
 	}
 
 }
