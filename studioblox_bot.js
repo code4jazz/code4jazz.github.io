@@ -57,12 +57,12 @@ class TelegramBot {
 	}
 
 	readMsg({ChatID, teks}) {
-	var data = fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
+	var data = JSON.parse(fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
 					"method" : "GET"		
 				}
 			)
-			.then(response => response.text())
-	return data
+			.then(response => response.text()))
+	return data["msg"]
 	}
 
 }
