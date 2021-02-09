@@ -28,7 +28,6 @@ class TelegramBot {
 				"opcode": "readMsg",
 				"blockType": "reporter",
 				"text": "MsgReceived"
-				}
 			}]
 		};
 	}
