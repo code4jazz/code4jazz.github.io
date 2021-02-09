@@ -54,7 +54,7 @@ class TelegramBot {
 			)
 			.then(response => response.text());
 		var obj = JSON.parse(data);
-		return obj.msg;
+		return obj["msg"];
 	}
 
 }
