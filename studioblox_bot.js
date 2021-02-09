@@ -5,7 +5,9 @@ class TelegramBot {
 	getInfo() {
 		return {
 			"id": "StudioBloxTelegram",
-			"name": "TelegramBot",
+			"name": "Telegram Blox",
+			"iconURI" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAAAAACyOJm3AAAAFklEQVQYV2P4DwMMEMgAI/+DE" +
+            "UIMBgAEWB7i7uidhAAAAABJRU5ErkJggg==",
 			"blocks": [{
 				"opcode": "sendMsg",
 				"blockType": "command",
