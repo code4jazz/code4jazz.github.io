@@ -31,7 +31,7 @@ class TelegramBot {
 			"text" : teks
 		}
 
-	return	fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?",{
+	return	fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=chat&chat_id="+ ChatID + "&text=" + teks,{
 					"method" : "POST",
 					"headers" : {
 						"Content-type" : "application/json"
