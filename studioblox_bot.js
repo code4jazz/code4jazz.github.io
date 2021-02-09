@@ -48,11 +48,11 @@ class TelegramBot {
 	}
 
 	readMsg() {
-		return JSON.parse(fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
+		return fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
 					"method" : "GET"		
 				}
 			)
-			.then(response => response.text()))
+			.then(response => response.text())
 		//var obj = JSON.parse(data)
 		//return data
 	}
