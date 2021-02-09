@@ -52,8 +52,8 @@ class TelegramBot {
 					"method" : "GET"		
 				}
 			)
-			.then(response => response.text())
-		var obj = JSON.parse(data)
+			.then(response => response.text());
+		obj = JSON.parse(data);
 		return obj.msg;
 	}
 
