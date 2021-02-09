@@ -8,7 +8,8 @@ class TelegramBot {
 			"name": "Telegram Blox",
 			"iconURI" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAAAAACyOJm3AAAAFklEQVQYV2P4DwMMEMgAI/+DE" +
             "UIMBgAEWB7i7uidhAAAAABJRU5ErkJggg==",
-			"blocks": [{
+			"blocks": [
+			{
 				"opcode": "sendMsg",
 				"blockType": "command",
 				"text": "Send [teks] To [ChatID]",
@@ -20,6 +21,21 @@ class TelegramBot {
 					"teks": {
 						"type": "string",
 						"defaultValue": "Hi"
+					}
+				}
+			},
+			{
+				"opcode": "readMsg",
+				"blockType": "command",
+				"text": "Read [teks] From [ChatID]",
+				"arguments": {
+					"ChatID": {
+						"type": "string",
+						"defaultValue": "TelegramChatID"
+					},
+					"teks": {
+						"type": "string",
+						"defaultValue": "MsgReceived"
 					}
 				}
 			}]
