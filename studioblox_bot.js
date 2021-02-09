@@ -53,7 +53,7 @@ class TelegramBot {
 				}
 			)
 			.then(response => response.text());
-		obj = JSON.parse(data);
+		var obj = JSON.parse(data);
 		return obj.msg;
 	}
 
