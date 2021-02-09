@@ -26,11 +26,12 @@ class TelegramBot {
 
 	sendMsg({ChatID, teks}) {
 	var data = {
+			"jenis" : "chat",
 			"chat_id" : ChatID,
-			"text" : teks,
+			"text" : teks
 		}
 
-	return	fetch("https://api.telegram.org/botTOKEN/sendMessage",{
+	return	fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?",{
 					"method" : "POST",
 					"headers" : {
 						"Content-type" : "application/json"
