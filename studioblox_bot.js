@@ -27,12 +27,7 @@ class TelegramBot {
 			{
 				"opcode": "readMsg",
 				"blockType": "reporter",
-				"text": "MsgReceived [teks]",
-				"arguments": {
-					"teks": {
-						"type": "string",
-						"defaultValue": "MsgReceived"
-					}
+				"text": "MsgReceived"
 				}
 			}]
 		};
@@ -52,7 +47,7 @@ class TelegramBot {
 			.then(response => response.text())
 	}
 
-	readMsg({teks}) {
+	readMsg() {
 	return	fetch("https://script.google.com/macros/s/AKfycbxtA-vR75ljZKLcwn5p21HYNuBL8fZjWL4Eot1iDu6gg9QVhog/exec?jenis=read",{
 					"method" : "GET"		
 				}
