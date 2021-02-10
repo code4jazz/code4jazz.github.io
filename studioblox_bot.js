@@ -61,7 +61,8 @@ class TelegramBot {
 					"method" : "GET"		
 				}
 			)
-			.then(response => response.text())
+			.then(response => response.json())
+			.then(result => {${msg}})
 	}
 
 }
