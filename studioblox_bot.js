@@ -62,7 +62,7 @@ class TelegramBot {
 				}
 			)
 			.then(response => response.json())
-			.then(result => {${msg}})
+			.then(result => {${msg[0]}})
 	}
 
 }
