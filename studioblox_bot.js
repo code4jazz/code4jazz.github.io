@@ -62,7 +62,6 @@ class TelegramBot {
 				}
 			)
 			.then(response => response.json())
-			.then(result => {${msg}})
 	//data2 = JSON.parse(data1)		
 	//return data2.msg
 	}
