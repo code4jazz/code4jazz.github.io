@@ -1,10 +1,16 @@
+const ArgumentType = require('../../extension-support/argument-type');
+const BlockType = require('../../extension-support/block-type');
+const Cast = require('../../util/cast');
+const log = require('../../util/log');
+
 class TelegramBot {
-	constructor() {
+	constructor(runtime) {
+		this.runtime = runtime;
     }
 
 	getInfo() {
 		return {
-			"id": "StudioBloxTelegram",
+			"id": "telegramblox",
 			"name": "Telegram Blox",
 			"iconURI" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAAAAACyOJm3AAAAFklEQVQYV2P4DwMMEMgAI/+DE" +
             "UIMBgAEWB7i7uidhAAAAABJRU5ErkJggg==",
