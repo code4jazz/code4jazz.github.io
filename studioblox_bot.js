@@ -1,18 +1,13 @@
-const ArgumentType = require('../../extension-support/argument-type');
-const BlockType = require('../../extension-support/block-type');
-const Cast = require('../../util/cast');
-const log = require('../../util/log');
-
-
-class Scratch3TelegramBlox {
-	constructor(runtime) {
-		this.runtime = runtime;
+class TelegramBot {
+	constructor() {
     }
 
 	getInfo() {
 		return {
-			"id": "telegramblox",
+			"id": "StudioBloxTelegram",
 			"name": "Telegram Blox",
+			"iconURI" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAAAAACyOJm3AAAAFklEQVQYV2P4DwMMEMgAI/+DE" +
+            "UIMBgAEWB7i7uidhAAAAABJRU5ErkJggg==",
 			"blocks": [
 			{
 				"opcode": "sendMsg",
@@ -44,7 +39,7 @@ class Scratch3TelegramBlox {
 					}
 				}
 			}]
-		}
+		};
 	}
 
 	sendMsg({ChatID, teks}) {
@@ -70,4 +65,4 @@ class Scratch3TelegramBlox {
 	}
 
 }
-Scratch.extensions.register(new Scratch3TelegramBlox())
+Scratch.extensions.register(new TelegramBot())
