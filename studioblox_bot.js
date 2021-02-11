@@ -1,8 +1,3 @@
-const ArgumentType = require('../../extension-support/argument-type');
-const BlockType = require('../../extension-support/block-type');
-const Cast = require('../../util/cast');
-const log = require('../../util/log');
-
 class TelegramBot {
 	constructor() {
 		
