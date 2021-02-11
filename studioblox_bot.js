@@ -4,8 +4,8 @@ const Cast = require('../../util/cast');
 const log = require('../../util/log');
 
 class TelegramBot {
-	constructor(runtime) {
-		this.runtime = runtime;
+	constructor() {
+		
     }
 
 	getInfo() {
