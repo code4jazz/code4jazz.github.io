@@ -44,7 +44,7 @@ class Scratch3TelegramBlox {
 					}
 				}
 			}]
-		};
+		}
 	}
 
 	sendMsg({ChatID, teks}) {
